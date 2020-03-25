@@ -10,6 +10,7 @@ const nunjucks = require('nunjucks')
 const sessionInCookie = require('client-sessions')
 const sessionInMemory = require('express-session')
 const cookieParser = require('cookie-parser')
+const marked = require('marked')
 
 // Run before other code to make sure variables from .env are available
 dotenv.config()
@@ -98,6 +99,17 @@ if (env === 'development') {
 nunjucksConfig.express = app
 
 var nunjucksAppEnv = nunjucks.configure(appViews, nunjucksConfig)
+
+nunjucksAppEnv.addGlobal('markdown', function(text) {
+  if (text === undefined) {
+    return ''
+  }
+
+  // Ignore leading indentation
+  t = text.replace(/^\s+/gm, "\n")
+
+  return '<div class="markdown">' + marked(t) + '</div>';
+});
 
 // Add Nunjucks filters
 utils.addNunjucksFilters(nunjucksAppEnv)
