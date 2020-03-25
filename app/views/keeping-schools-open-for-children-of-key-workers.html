@@ -1,0 +1,107 @@
+{% extends "layout_html_publication.html" %}
+
+{% set mainClasses = "html-publication" %}
+{% set publicationTitle = "Keeping schools open for children of key workers" %}
+{% set publicationDate = "26 March 2020" %}
+
+{% block htmlPublicationContent %}
+<div class="govspeak">
+  {{ markdown('
+
+The government has asked parents to keep their children at home to stop the spread of COVID-19.
+
+The fewer children leaving their homes, the lower the risk of infection.
+
+## Who can use schools and childcare centres
+
+Schools and childcare centres are open only for vulnerable children and the children of key workers.
+
+By key workers, we mean people whose jobs are critical to public health and safety during the coronavirus crisis.
+
+This includes:
+
+### Health and social care
+
+* doctors
+* nurses
+* midwives
+* paramedics
+* social workers
+* care workers
+* other frontline health and social care staff, including volunteers
+* support and specialist staff
+* producers and distributors of medicine and equipment
+
+### Education and childcare
+
+* teaching staff
+* support staff
+* nursery staff
+* childminders
+* nannies
+* social workers
+* professionals supporting the COVID-19 response
+
+### Key public services
+
+* justice staff
+* religious staff
+* charity workers
+* those who deal with the deceased
+* journalists and broadcasters providing public service broadcasting
+* workers delivering key frontline services
+
+### Local and national government
+
+* staff who are essential to delivering the COVID-19 response
+* staff who support the payment of benefits
+
+### Food and other necessary goods
+* people who produce, process and distribute food or necessary goods – for example, hygiene and veterinary products
+* people who sell or deliver food or necessary goods
+
+### Public safety and national security
+
+* police and support staff
+* Ministry of Defence civilians, contractors and armed forces personnel
+* fire and rescue service employees and support staff
+* National Crime Agency staff
+* border security staff
+* prison and probation staff
+* other national security roles, including overseas
+
+### Transport
+
+* workers who’ll keep transport running during the coronavirus crisis
+* anyone working on transport systems that supply chains depend on
+
+### Utilities, communication and financial services
+
+* bank, building society and financial market workers
+* oil, gas, electricity, water and sewerage workers
+* IT and data infrastructure workers
+* civil nuclear workers
+* chemicals workers
+* telecommunications workers, including network, engineering, call centres, IT
+* 999 and 111 critical services
+* postal and delivery workers
+* payment providers
+* waste disposal workers
+
+## If you’re not sure whether you’re a key worker
+
+If in doubt about whether you’re a key worker, ask your employer.
+
+## If you’re a key worker and you’re able to work from home
+
+If you’re a key worker and able to work from home, keep your children with you if you can.
+
+## If you’re a key worker and your school or childcare provider is closed
+
+If your school or childcare provider is closed, [contact your local authority](https://www.gov.uk/find-local-council). They should direct you to another one in your area that your children can attend.
+
+
+  ') | safe }}
+</div>
+
+{% endblock %}
