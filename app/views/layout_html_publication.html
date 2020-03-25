@@ -31,6 +31,24 @@
 
       <div class="govuk-grid-row sidebar-with-body" data-module="sticky-element-container" id="contents">
 
+        {% block contentsList %}
+          {% if contentsHeadings %}
+          <div class="govuk-grid-column-one-quarter-from-desktop contents-list-container">
+            <nav class="gem-c-contents-list  gem-c-contents-list--no-underline " role="navigation" data-module="track-click">
+              <h2 class="gem-c-contents-list__title">Contents</h2>
+
+              <ol class="gem-c-contents-list__list">
+                {% for contentsHeading in contentsHeadings %}
+                  <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--numbered">
+                    <a class="gem-c-contents-list__link govuk-link" href="#{{contentsHeading.id}}">{{contentsHeading.title}}</a>
+                  </li>
+                {% endfor %}
+              </ol>
+            </nav>
+          </div>
+          {% endif %}
+        {% endblock %}
+
         <div class="print-wrapper">
           <div class="print-meta-data">
             <p>
