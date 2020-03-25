@@ -1,6 +1,9 @@
-{% extends "layout_html_publication.html" %}
+{% extends "layout_govuk.html" %}
 
 {% set mainClasses = "html-publication" %}
+
+{% from "macros/html-publication/macro.njk"             import htmlPublication %}
+
 {% set publicationTitle = "Keeping schools open for children of key workers" %}
 {% set publicationDate = "26 March 2020" %}
 
@@ -11,10 +14,7 @@
   { title: "If you’re a key worker and your school or childcare provider is closed", id: "if-you-re-a-key-worker-and-your-school-or-childcare-provider-is-closed" }
 ] %}
 
-{% block htmlPublicationContent %}
-<div class="govspeak">
-  {{ markdown('
-
+{% set markdownContent %}
 The government has asked parents to keep their children at home to stop the spread of COVID-19.
 
 The fewer children leaving their homes, the lower the risk of infection.
@@ -107,8 +107,13 @@ If you’re a key worker and able to work from home, keep your children with you
 
 If your school or childcare provider is closed, [contact your local authority](https://www.gov.uk/find-local-council). They should direct you to another one in your area that your children can attend.
 
+{% endset %}
 
-  ') | safe }}
-</div>
-
+{% block content %}
+  {{ htmlPublication({
+    markdownContent: markdownContent,
+    publicationTitle: publicationTitle,
+    publicationDate: publicationDate,
+    contentsHeadings: contentsHeadings
+  }) }}
 {% endblock %}
