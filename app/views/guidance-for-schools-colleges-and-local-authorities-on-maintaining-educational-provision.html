@@ -1,168 +1,97 @@
-{% extends "layout_govuk.html" %}
+{% extends "layout_html_publication.html" %}
 
 {% set mainClasses = "html-publication" %}
+{% set publicationTitle = "Guidance for schools, childcare providers, colleges and local authorities in England on maintaining educational provision" %}
+{% set publicationDate = "19 March 2020" %}
 
-{% block content %}
+{% block htmlPublicationContent %}
+<div class="govspeak">
+  <p>As a country, we all need to do what we can to reduce the spread of the COVID-19 virus.</p>
 
-      <div class="publication-external">
-        <ol class="organisation-logos">
-          <li class="organisation-logos__logo">
-            <div class="organisation-logo__inner">
-              <div class="gem-c-organisation-logo brand--cabinet-office">
-                <a class="gem-c-organisation-logo__container gem-c-organisation-logo__link gem-c-organisation-logo__crest gem-c-organisation-logo__crest--single-identity brand__border-color" href="/government/organisations/cabinet-office">
-                  <span class="gem-c-organisation-logo__name">Cabinet Office</span>
-                </a>
-              </div>
+  <p>That is why the government has given clear guidance on <a rel="external" href="https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-advice/" class="govuk-link">self-isolation</a>, <a href="https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance"
+      class="govuk-link">household isolation</a> and <a href="https://www.gov.uk/government/publications/covid-19-guidance-on-social-distancing-and-for-vulnerable-people" class="govuk-link">social distancing</a>.</p>
 
-            </div>
-          </li>
-          <li class="organisation-logos__logo">
-            <div class="organisation-logo__inner">
-              <div class="gem-c-organisation-logo brand--department-for-education">
-                <a class="gem-c-organisation-logo__container gem-c-organisation-logo__link gem-c-organisation-logo__crest gem-c-organisation-logo__crest--single-identity brand__border-color" href="/government/organisations/department-for-education">
-                  <span class="gem-c-organisation-logo__name">Department <br>for Education</span>
-                </a>
-              </div>
+  <p>And the most recent scientific advice on how to further limit the spread of COVID-19 is clear. If children can stay safely at home, they should, to limit the chance of the virus spreading.</p>
 
-            </div>
-          </li>
-        </ol>
-      </div>
+  <p>That is why the government has asked parents to keep their children at home, wherever possible, and asked schools to remain open only for those children who absolutely need to attend.</p>
 
-      {{ inverseHeader({ title: "Guidance for schools, childcare providers, colleges and local authorities in England on maintaining educational provision", publishedOn: "19 March 2020" }) }}
+  <p>It is important to underline that schools, all childcare settings (including early years settings, childminders and providers of childcare for school-age children), colleges and other educational establishments, remain safe places
+    for children. But the fewer children making the journey to school, and the fewer children in educational settings, the lower the risk that the virus can spread and infect vulnerable individuals in wider society.</p>
 
-      <div class="govuk-grid-row sidebar-with-body" data-module="sticky-element-container" id="contents">
+  <p>Schools, and all childcare providers, are therefore being asked to continue to provide care for a limited number of children - children who are vulnerable, and children whose parents are critical to the Covid-19 response and
+    cannot be safely cared for at home.</p>
 
-        <div class="print-wrapper">
-          <div class="print-meta-data">
-            <p>
-              <img class="print-meta-data-licence" src="https://assets.publishing.service.gov.uk/government-frontend/open-government-licence-min-e98134ae65ff5fe99a524d8c383350b3998f91c298dc24b36126e65f1656c578.png">
-            </p>
-            <p>
-              © Crown copyright 2020
-            </p>
-            <p>
-              This publication is licensed under the terms of the Open Government Licence v3.0 except where otherwise stated. To view this licence, visit <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3">nationalarchives.gov.uk/doc/open-government-licence/version/3</a>
-              or write to the Information Policy Team, The National Archives, Kew, London TW9 4DU, or email: <a href="mailto:psi@nationalarchives.gsi.gov.uk">psi@nationalarchives.gsi.gov.uk</a>.
-            </p>
-            <p>
-              Where we have identified any third party copyright information you will need to obtain permission from the copyright holders concerned.
-            </p>
-            <p>
-              This publication is available at https://www.gov.uk/government/publications/coronavirus-covid-19-maintaining-educational-provision/guidance-for-schools-colleges-and-local-authorities-on-maintaining-educational-provision
-            </p>
+  <p>Vulnerable children include children who are supported by social care, those with safeguarding and welfare needs, including child in need plans, on child protection plans, ‘looked after’ children, young carers, disabled children
+    and those with <a href="https://www.gov.uk/children-with-special-educational-needs/extra-SEN-help" class="govuk-link">education, health and care (<abbr title="education, health and care">EHC</abbr>) plans</a>.</p>
 
+  <p>We know that schools will also want to support other children facing social difficulties, and we will support head teachers to do so.</p>
 
-          </div>
-        </div>
+  <p>Parents whose work is critical to the COVID-19 response include those who work in health and social care and in other key sectors outlined below. Many parents working in these sectors may be able to ensure their child is kept at
+    home. And every child who can be safely cared for at home should be.</p>
 
-        <div class="main-content-container offset-empty-contents-list">
-          <div class="gem-c-govspeak-html-publication">
+  <p>Please, therefore, follow these key principles:</p>
 
-            <div class="gem-c-govspeak govuk-govspeak direction-ltr" data-module="govspeak">
-              <div class="govspeak">
-                <p>As a country, we all need to do what we can to reduce the spread of the COVID-19 virus.</p>
+  <ol>
+    <li>If it is at all possible for children to be at home, then they should be.</li>
+    <li>If a child needs specialist support, is vulnerable or has a parent who is a critical worker, then educational provision will be available for them.</li>
+    <li>Parents should not rely for childcare upon those who are advised to be in the
+      stringent social distancing category such as grandparents, friends, or family
+      members with underlying conditions.</li>
+    <li>Parents should also do everything they can to ensure children are not mixing socially in a way which can continue to spread the virus. They should observe the same social distancing principles as adults.</li>
+    <li>Residential special schools, boarding schools and special settings continue to care for children wherever possible.</li>
+  </ol>
 
-                <p>That is why the government has given clear guidance on <a rel="external" href="https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-advice/" class="govuk-link">self-isolation</a>, <a href="https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance"
-                    class="govuk-link">household isolation</a> and <a href="https://www.gov.uk/government/publications/covid-19-guidance-on-social-distancing-and-for-vulnerable-people" class="govuk-link">social distancing</a>.</p>
+  <p>If your work is critical to the COVID-19 response, or you work in one of the critical sectors listed below, and you cannot keep your child safe at home then your children will be prioritised for education provision:</p>
 
-                <p>And the most recent scientific advice on how to further limit the spread of COVID-19 is clear. If children can stay safely at home, they should, to limit the chance of the virus spreading.</p>
+  <h3 id="health-and-social-care">Health and social care</h3>
 
-                <p>That is why the government has asked parents to keep their children at home, wherever possible, and asked schools to remain open only for those children who absolutely need to attend.</p>
+  <p>This includes but is not limited to doctors, nurses, midwives, paramedics, social workers, care workers, and other frontline health and social care staff including volunteers; the support and specialist staff required to maintain
+    the UK’s health and social care sector; those working as part of the health and social care supply chain, including producers and distributers of medicines and medical and personal protective equipment.</p>
 
-                <p>It is important to underline that schools, all childcare settings (including early years settings, childminders and providers of childcare for school-age children), colleges and other educational establishments, remain safe places
-                  for children. But the fewer children making the journey to school, and the fewer children in educational settings, the lower the risk that the virus can spread and infect vulnerable individuals in wider society.</p>
+  <h3 id="education-and-childcare">Education and childcare</h3>
 
-                <p>Schools, and all childcare providers, are therefore being asked to continue to provide care for a limited number of children - children who are vulnerable, and children whose parents are critical to the Covid-19 response and
-                  cannot be safely cared for at home.</p>
+  <p>This includes childcare, support and teaching staff, social workers and those specialist education professionals who must remain active during the COVID-19 response to deliver this approach.</p>
 
-                <p>Vulnerable children include children who are supported by social care, those with safeguarding and welfare needs, including child in need plans, on child protection plans, ‘looked after’ children, young carers, disabled children
-                  and those with <a href="https://www.gov.uk/children-with-special-educational-needs/extra-SEN-help" class="govuk-link">education, health and care (<abbr title="education, health and care">EHC</abbr>) plans</a>.</p>
+  <h3 id="key-public-services">Key public services</h3>
 
-                <p>We know that schools will also want to support other children facing social difficulties, and we will support head teachers to do so.</p>
+  <p>This includes those essential to the running of the justice system, religious staff, charities and workers delivering key frontline services, those responsible for the management of the deceased, and journalists and broadcasters
+    who are providing public service broadcasting.</p>
 
-                <p>Parents whose work is critical to the COVID-19 response include those who work in health and social care and in other key sectors outlined below. Many parents working in these sectors may be able to ensure their child is kept at
-                  home. And every child who can be safely cared for at home should be.</p>
+  <h3 id="local-and-national-government">Local and national government</h3>
 
-                <p>Please, therefore, follow these key principles:</p>
+  <p>This only includes those administrative occupations essential to the effective delivery of the COVID-19 response, or delivering essential public services, such as the payment of benefits, including in government agencies and arms
+    length bodies.</p>
 
-                <ol>
-                  <li>If it is at all possible for children to be at home, then they should be.</li>
-                  <li>If a child needs specialist support, is vulnerable or has a parent who is a critical worker, then educational provision will be available for them.</li>
-                  <li>Parents should not rely for childcare upon those who are advised to be in the
-                    stringent social distancing category such as grandparents, friends, or family
-                    members with underlying conditions.</li>
-                  <li>Parents should also do everything they can to ensure children are not mixing socially in a way which can continue to spread the virus. They should observe the same social distancing principles as adults.</li>
-                  <li>Residential special schools, boarding schools and special settings continue to care for children wherever possible.</li>
-                </ol>
+  <h3 id="food-and-other-necessary-goods">Food and other necessary goods</h3>
 
-                <p>If your work is critical to the COVID-19 response, or you work in one of the critical sectors listed below, and you cannot keep your child safe at home then your children will be prioritised for education provision:</p>
+  <p>This includes those involved in food production, processing, distribution, sale and delivery, as well as those essential to the provision of other key goods (for example hygienic and veterinary medicines).</p>
 
-                <h3 id="health-and-social-care">Health and social care</h3>
+  <h3 id="public-safety-and-national-security">Public safety and national security</h3>
 
-                <p>This includes but is not limited to doctors, nurses, midwives, paramedics, social workers, care workers, and other frontline health and social care staff including volunteers; the support and specialist staff required to maintain
-                  the UK’s health and social care sector; those working as part of the health and social care supply chain, including producers and distributers of medicines and medical and personal protective equipment.</p>
+  <p>This includes police and support staff, Ministry of Defence civilians, contractor and armed forces personnel (those critical to the delivery of key defence and national security outputs and essential to the response to the
+    COVID-19 pandemic), fire and rescue service employees (including support staff), National Crime Agency staff, those maintaining border security, prison and probation staff and other national security roles, including those
+    overseas.</p>
 
-                <h3 id="education-and-childcare">Education and childcare</h3>
+  <h3 id="transport">Transport</h3>
 
-                <p>This includes childcare, support and teaching staff, social workers and those specialist education professionals who must remain active during the COVID-19 response to deliver this approach.</p>
+  <p>This includes those who will keep the air, water, road and rail passenger and freight transport modes operating during the COVID-19 response, including those working on transport systems through which supply chains pass.</p>
 
-                <h3 id="key-public-services">Key public services</h3>
+  <h3 id="utilities-communication-and-financial-services">Utilities, communication and financial services</h3>
 
-                <p>This includes those essential to the running of the justice system, religious staff, charities and workers delivering key frontline services, those responsible for the management of the deceased, and journalists and broadcasters
-                  who are providing public service broadcasting.</p>
+  <p>This includes staff needed for essential financial services provision (including but not limited to workers in banks, building societies and financial market infrastructure), the oil, gas, electricity and water sectors (including
+    sewerage), information technology and data infrastructure sector and primary industry supplies to continue during the COVID-19 response, as well as key staff working in the civil nuclear, chemicals, telecommunications (including
+    but not limited to network operations, field engineering, call centre staff, IT and data infrastructure, 999 and 111 critical services), postal services and delivery, payments providers and waste disposal sectors.</p>
 
-                <h3 id="local-and-national-government">Local and national government</h3>
+  <p>If workers think they fall within the critical categories above, they should confirm with
+    their employer that, based on their business continuity arrangements, their specific role is necessary for the continuation of this essential public service.</p>
 
-                <p>This only includes those administrative occupations essential to the effective delivery of the COVID-19 response, or delivering essential public services, such as the payment of benefits, including in government agencies and arms
-                  length bodies.</p>
+  <p>If your school is closed, then please <a href="https://www.gov.uk/find-local-council" class="govuk-link">contact your local authority</a>, who will seek to redirect you to a local school in your area that your child, or children,
+    can attend.</p>
 
-                <h3 id="food-and-other-necessary-goods">Food and other necessary goods</h3>
+  <p>We are grateful for the work of teachers and workers in educational settings for
+    continuing to provide for the children of the other critical workers of our country. It is
+    an essential part of our national effort to combat this disease.</p>
 
-                <p>This includes those involved in food production, processing, distribution, sale and delivery, as well as those essential to the provision of other key goods (for example hygienic and veterinary medicines).</p>
-
-                <h3 id="public-safety-and-national-security">Public safety and national security</h3>
-
-                <p>This includes police and support staff, Ministry of Defence civilians, contractor and armed forces personnel (those critical to the delivery of key defence and national security outputs and essential to the response to the
-                  COVID-19 pandemic), fire and rescue service employees (including support staff), National Crime Agency staff, those maintaining border security, prison and probation staff and other national security roles, including those
-                  overseas.</p>
-
-                <h3 id="transport">Transport</h3>
-
-                <p>This includes those who will keep the air, water, road and rail passenger and freight transport modes operating during the COVID-19 response, including those working on transport systems through which supply chains pass.</p>
-
-                <h3 id="utilities-communication-and-financial-services">Utilities, communication and financial services</h3>
-
-                <p>This includes staff needed for essential financial services provision (including but not limited to workers in banks, building societies and financial market infrastructure), the oil, gas, electricity and water sectors (including
-                  sewerage), information technology and data infrastructure sector and primary industry supplies to continue during the COVID-19 response, as well as key staff working in the civil nuclear, chemicals, telecommunications (including
-                  but not limited to network operations, field engineering, call centre staff, IT and data infrastructure, 999 and 111 critical services), postal services and delivery, payments providers and waste disposal sectors.</p>
-
-                <p>If workers think they fall within the critical categories above, they should confirm with
-                  their employer that, based on their business continuity arrangements, their specific role is necessary for the continuation of this essential public service.</p>
-
-                <p>If your school is closed, then please <a href="https://www.gov.uk/find-local-council" class="govuk-link">contact your local authority</a>, who will seek to redirect you to a local school in your area that your child, or children,
-                  can attend.</p>
-
-                <p>We are grateful for the work of teachers and workers in educational settings for
-                  continuing to provide for the children of the other critical workers of our country. It is
-                  an essential part of our national effort to combat this disease.</p>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div data-sticky-element class="govuk-sticky-element">
-          <a class="govuk-link app-c-back-to-top dont-print" href="#contents">
-            <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewbox="0 0 13 17">
-              <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
-            </svg>
-            Contents
-          </a>
-
-        </div>
-      </div>
-
+</div>
 
 {% endblock %}
