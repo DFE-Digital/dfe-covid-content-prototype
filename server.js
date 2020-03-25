@@ -11,6 +11,7 @@ const sessionInCookie = require('client-sessions')
 const sessionInMemory = require('express-session')
 const cookieParser = require('cookie-parser')
 const marked = require('marked')
+const slugify = require('slugify')
 
 // Run before other code to make sure variables from .env are available
 dotenv.config()
@@ -109,6 +110,12 @@ nunjucksAppEnv.addGlobal('markdown', function(text) {
   t = text.replace(/^\s+/gm, "\n")
 
   return '<div class="markdown">' + marked(t) + '</div>';
+});
+
+nunjucksAppEnv.addGlobal('slugify', function(text) {
+  return slugify(text.replace(/’/g, "-"), {
+    lower: true
+  });
 });
 
 // Add Nunjucks filters

@@ -36,7 +36,11 @@
         <ol class="gem-c-contents-list__list">
           {% for contentsHeading in params.contentsHeadings %}
             <li class="gem-c-contents-list__list-item gem-c-contents-list__list-item--numbered">
-              <a class="gem-c-contents-list__link govuk-link" href="#{{contentsHeading.id}}">{{contentsHeading.title}}</a>
+              {% if contentsHeading.title %}
+                <a class="gem-c-contents-list__link govuk-link" href="#{{slugify(contentsHeading.id)}}">{{contentsHeading.title}}</a>
+              {% else %}
+                <a class="gem-c-contents-list__link govuk-link" href="#{{slugify(contentsHeading)}}">{{contentsHeading}}</a>
+              {% endif %}
             </li>
           {% endfor %}
         </ol>
