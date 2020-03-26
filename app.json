@@ -1,21 +1,25 @@
 {
-    "name": "govuk-prototype-kit",
-    "scripts": {},
-    "env": {
-      "USE_AUTH": {
-        "required": true
+  "name": "govuk-prototype-kit",
+  "scripts": {},
+  "env": {
+    "USE_AUTH": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "buildpacks": [{
+    "url": "heroku/nodejs"
+  }],
+  "environments": {
+    "review": {
+      "env": {
+        "USE_AUTH": "false"
       }
-    },
-    "formation": {
-      "web": {
-        "quantity": 1
-      }
-    },
-    "addons": [],
-    "buildpacks": [
-      {
-        "url": "heroku/nodejs"
-      }
-    ]
+    }
   }
-  
+}
