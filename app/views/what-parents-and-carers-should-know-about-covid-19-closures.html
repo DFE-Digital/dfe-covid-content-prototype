@@ -1,0 +1,66 @@
+{% extends "layout_govuk.html" %}
+
+{% set mainClasses = "html-publication" %}
+
+{% from "macros/html-publication/macro.njk"             import htmlPublication %}
+
+{% set publicationTitle = "What parents and carers need to know about COVID-19 closures" %}
+{% set publicationDate = "27 March 2020" %}
+
+{% set contentsHeadings = [
+  "Schools and childcare centres are only open to some children",
+  "Free school meals and food vouchers are still available",
+  "Exams have been cancelled",
+  "The Department for Education will support online learning"
+] %}
+
+{% set markdownContent %}
+To stop the spread of COVID-19, the government has asked parents to keep children at home until further notice.
+
+## Schools and childcare centres are only open to some children
+
+Schools, colleges and other childcare centres (as well as independent and boarding schools) are only open to:
+
+* [vulnerable children](https://www.gov.uk/government/publications/coronavirus-covid-19-guidance-on-vulnerable-children-and-young-people)
+* [the children of key workers](/keeping-schools-open-for-children-of-key-workers)
+
+### If your child has special educational needs or a disability
+
+We know children and young people with special educational needs and disability (SEND) face various challenges because of coronavirus. As such, residential special schools and other special settings will stay open if they can.
+
+### If you’re still being charged for childcare
+
+Early years providers might not be insured against income lost due to COVID-19. The government has asked providers to be reasonable with parents, but it can’t force them to stop charging you.
+
+## Free school meals and food vouchers are still available
+
+There is still [support for pupils eligible for school meals](https://www.gov.uk/government/news/plans-set-out-to-support-pupils-eligible-for-free-school-meals). Schools can:
+
+* provide food on site
+* arrange deliveries
+* purchase vouchers to be given to parents
+
+Contact your school to find out which option they’re providing.
+
+## Exams have been cancelled
+
+[This summer’s exams have been cancelled](https://www.gov.uk/government/publications/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020/coronavirus-covid-19-cancellation-of-gcses-as-and-a-levels-in-2020). This affects SATs, GCSEs, AS levels and A levels.
+
+## The Department for Education will support online learning
+
+The Department for Education will support parents so they can keep teaching their children at home.
+
+We’re working with the BBC and others to provide suitable resources as soon as possible. For parents with children under 5 years old, see [hungrylittleminds.campaign.gov.uk](https://hungrylittleminds.campaign.gov.uk/).
+
+We understand the importance of having a reliable internet connection at this time and we’re talking to operators about this.
+
+{% endset %}
+
+{% block content %}
+  {{ htmlPublication({
+    markdownContent: markdownContent,
+    publicationTitle: publicationTitle,
+    publicationDate: publicationDate,
+    contentsHeadings: contentsHeadings
+  }) }}
+{% endblock %}
